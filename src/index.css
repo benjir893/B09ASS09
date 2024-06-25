@@ -1,3 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat:wght@100..900&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat:wght@100..900&family=Nabla&family=Prata&display=swap');
+
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        bungee: "'Bungee Spice', sans-serif",
+        nabla:"'Nabla', system-ui",
+        montserrat:"'Montserrat', sans-serif",
+        prata:"'Prata', serif"
+      }
+    },
   },
   plugins: [
     require('daisyui'),
