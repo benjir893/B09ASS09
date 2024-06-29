@@ -1,7 +1,10 @@
+import { useLoaderData } from "react-router-dom";
 import Estate from "./Estate";
 
 
 const Home = () => {
+    const houses = useLoaderData();
+    console.log(houses)
     return (
         <div className="">
             <div className="">
@@ -35,7 +38,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="">
-                <Estate></Estate>
+                {houses.map(house => <Estate key={house.id} houses={house}></Estate>)}
             </div>
         </div>
     );

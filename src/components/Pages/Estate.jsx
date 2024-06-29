@@ -1,9 +1,11 @@
+import { useLoaderData } from "react-router-dom";
 
 
-const Estate = () => {
+const Estate = ({houses}) => {
+    const {estate_title} = houses;
     return (
         <div>
-            <h1>estate page</h1>
+            <h1> {estate_title}</h1>
         </div>
     );
 };
