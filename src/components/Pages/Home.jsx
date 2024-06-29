@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Estate from "./Estate";
+import { Helmet } from "react-helmet-async";
 
 
 const Home = () => {
@@ -8,6 +9,9 @@ const Home = () => {
     return (
         <div className="">
             <div className="">
+                <Helmet>
+                    <title>spaceFor/Home</title>
+                </Helmet>
                 <div className="carousel w-full">
                     <div id="item1" className="carousel-item w-full">
                         <img

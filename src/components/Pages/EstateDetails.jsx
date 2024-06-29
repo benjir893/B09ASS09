@@ -3,7 +3,7 @@ import estatesdata from '../../../public/estates.json'
 
 const EstateDetails = () => {
     const { id } = useParams();
-    const house = estatesdata.find(house => house.id = id);
+    const house = estatesdata.find(house => house.id == id);
 
     return (
         <div className="card card-compact bg-base-100 w-full shadow-xl">
@@ -23,7 +23,7 @@ const EstateDetails = () => {
                 <h2 className="card-title md:ml-24">Facilities: {house.facilities}</h2>
 
                 <div className="card-actions justify-end">
-                    <Link to={'-1'}><button className="btn btn-ghost">Back</button></Link>
+                    <Link to={-1}><button className="btn btn-ghost">Back</button></Link>
                 </div>
             </div>
         </div>

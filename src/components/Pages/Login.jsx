@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Apps/Authprovider";
 import { FaEyeSlash, FaRegEye } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -43,6 +44,9 @@ const Login = () => {
 
     return (
         <div className="hero min-h-screen bg-orange-50">
+            <Helmet>
+                <title>spaceFor/Login</title>
+            </Helmet>
             <div className="space-y-3">
                 <div className="">
                     <h1 className="text-5xl font-bold font-bungee">Login now!</h1>

@@ -4,6 +4,7 @@ import { AuthContext } from "../Apps/Authprovider";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { doc, getFirestore, setDoc } from "firebase/firestore";
 import app from "../Apps/firebase.config";
+import { Helmet } from "react-helmet-async";
 
 const db = getFirestore(app);
 
@@ -68,6 +69,9 @@ const Register = () => {
 
     return (
         <div className="hero min-h-screen bg-orange-50">
+            <Helmet>
+                spaceFor/Register
+            </Helmet>
             <div className="space-y-3">
                 <div className="">
                     <h1 className="text-5xl font-bold font-bungee">Register now!</h1>
