@@ -6,6 +6,8 @@ import Register from "../Pages/Register";
 import Updates from "../Pages/Updates";
 import Profile from "../Pages/Profile";
 import PrivateRouters from "./PrivateRouters";
+import Estate from "../Pages/Estate";
+import EstateDetails from "../Pages/EstateDetails";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
             {
                 path:'/register',
                 element:<Register></Register>
+            },
+            {
+                path:'/estate',
+                element:<Estate></Estate>
+            },
+            {
+                path:'/estatedetails',
+                element:<PrivateRouters><EstateDetails></EstateDetails></PrivateRouters>
             },
         ]
     }

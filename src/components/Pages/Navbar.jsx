@@ -24,13 +24,13 @@ const Navbar = () => {
                     {
                         user && <>
                             <NavLink to={'/'}>HOME</NavLink>
-                            <NavLink to={'/updates'}>UPDATES</NavLink>
                             <NavLink to={'/profile'}>PROFILE</NavLink>
                         </>
                     }
                     {
                         !user && <>
                         <NavLink to={'/'}>HOME</NavLink>
+                        <NavLink to={'/estate'}>ESTATE</NavLink>
                         <NavLink to={'/register'}>REGISTER</NavLink>
                         </>
                     }
