@@ -15,7 +15,7 @@ const Estate = ({ houses }) => {
             <h1 className='text-orange-600 text-lg font-semibold text-center'>Lot Status : {Status}</h1>
             <div className="w-2/3 mx-auto pb-3">
                 {
-                    description.length > 200 ? <p>{description.slice(0, 200)} <Link to={`/estatedetails/{id}`} className='text-orange-500 font-semibold'>Reade more...</Link></p> : <p>{description}</p>
+                    description.length > 200 ? <p>{description.slice(0, 200)} <Link to={`/estatedetails/${id}`} className='text-orange-500 font-semibold'>Reade more...</Link></p> : <p>{description}</p>
                 }
             </div>
             

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import estatesdata from '../../../public/estates.json'
 
 const EstateDetails = () => {
@@ -23,7 +23,7 @@ const EstateDetails = () => {
                 <h2 className="card-title md:ml-24">Facilities: {house.facilities}</h2>
 
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <Link to={'-1'}><button className="btn btn-ghost">Back</button></Link>
                 </div>
             </div>
         </div>
